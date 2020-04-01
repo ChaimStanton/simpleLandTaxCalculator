@@ -19,6 +19,12 @@
 
     gtag('config', 'UA-162363875-1');
   </script>
+
+  <script>
+    function handleClick() {
+      window.alert("sometext" + document.getElementById("price").value);
+    }
+  </script>
 </head>
 
 <body id="page-top">
@@ -36,8 +42,8 @@
         </div>
     </nav>
     <header class="masthead bg-primary text-white text-center">
-        <form><input class="form-control" type="number"><button class="btn btn-success btn-block btn-lg bg-success border-success shadow d-inline-flex flex-row flex-grow-1 flex-shrink-0 flex-fill justify-content-center align-items-center flex-sm-grow-1 justify-content-sm-center align-items-sm-center flex-md-grow-1 flex-lg-grow-1 flex-xl-grow-1"
-                type="submit">Submit</button></form>
+        <form><input class="form-control" type="number" id="price"><button class="btn btn-success btn-block btn-lg bg-success border-success shadow d-inline-flex flex-row flex-grow-1 flex-shrink-0 flex-fill justify-content-center align-items-center flex-sm-grow-1 justify-content-sm-center align-items-sm-center flex-md-grow-1 flex-lg-grow-1 flex-xl-grow-1"
+                type="submit" onclick="handleClick()">Submit</button></form>
     </header>
     <section id="about" class="bg-primary text-white mb-0">
         <div class="container">
